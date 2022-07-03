@@ -5,10 +5,10 @@ namespace ModNameGoesHere
 {
     public class ModNameGoesHere : NeosMod
     {
-        public override string Name => "ModNameGoesHere";
-        public override string Author => "username";
+        public override string Name => "NeosDisableGamepads";
+        public override string Author => "Lexevo";
         public override string Version => "1.0.0";
-        public override string Link => "https://github.com/GithubUsername/RepoName/";
+        public override string Link => "https://github.com/Lexevolution/NeosDisableGamepads/";
         public override void OnEngineInit()
         {
             Harmony harmony = new Harmony("net.username.Template");
