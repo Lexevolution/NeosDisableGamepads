@@ -1,6 +1,6 @@
 # NeosDisableGamepads
 
-A [NeosModLoader](https://github.com/zkxs/NeosModLoader) mod for [Neos VR](https://neos.com/) that completely disables all gamepad inputs (for example fromm an Xbox controller).
+A [NeosModLoader](https://github.com/zkxs/NeosModLoader) mod for [Neos VR](https://neos.com/) that completely disables all gamepad inputs (for example from an Xbox controller).
 
 ## Installation
 1. Install [NeosModLoader](https://github.com/zkxs/NeosModLoader).
