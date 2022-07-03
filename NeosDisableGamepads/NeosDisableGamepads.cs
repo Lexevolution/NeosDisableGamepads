@@ -1,9 +1,9 @@
 ﻿using HarmonyLib;
 using NeosModLoader;
 
-namespace ModNameGoesHere
+namespace NeosDisableGamepads
 {
-    public class ModNameGoesHere : NeosMod
+    public class NeosDisableGamepads : NeosMod
     {
         public override string Name => "NeosDisableGamepads";
         public override string Author => "Lexevo";
@@ -11,16 +11,16 @@ namespace ModNameGoesHere
         public override string Link => "https://github.com/Lexevolution/NeosDisableGamepads/";
         public override void OnEngineInit()
         {
-            Harmony harmony = new Harmony("net.username.Template");
+            Harmony harmony = new Harmony("net.lexevo.NeosDisableGamepads");
             harmony.PatchAll();
         }
 		
-        [HarmonyPatch(typeof(class you want to patch), "name of method you want to patch")]
-        class ModNameGoesHerePatch
+        [HarmonyPatch(typeof(FrooxEngine.StandardGamepad), "Bind")]
+        class NeosDisableGamepadsPatch
         {
             public static bool Prefix()
             {
-                return false;//dont run rest of method
+                return false; //dont run rest of method
             }
         }
     }
